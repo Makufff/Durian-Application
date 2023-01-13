@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313077253872",
+    "project_id": "durinapp-42d08",
+    "storage_bucket": "durinapp-42d08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313077253872:android:e5adcf12af3c906357e435",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313077253872-21d11os2i206prim8u70995fal7d8csu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH7dzfAWpw2hmnn951q7ZusFuyZ6iwoLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313077253872-21d11os2i206prim8u70995fal7d8csu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
