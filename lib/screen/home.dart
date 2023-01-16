@@ -75,19 +75,19 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(
-              height: 5,
+              height: 50,
             ),
             buildLogo("assets/result.png"),
             const SizedBox(
-              height: 5,
+              height: 50,
             ),
             buildButton("ผลการสำรวจ", '/result'),
             const SizedBox(
-              height: 5,
+              height: 50,
             ),
             buildLogo("assets/leaf.png"),
             const SizedBox(
-              height: 5,
+              height: 50,
             ),
             buildButton("ตรวจสอบใบทุเรียน", '/image'),
           ],
