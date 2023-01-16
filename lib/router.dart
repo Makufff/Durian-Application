@@ -13,5 +13,8 @@ final Map<String, WidgetBuilder> routes = {
   '/register': (BuildContext context) => const RegisterScreen(),
   '/drone': (BuildContext context) => const DroneScreen(),
   '/result': (BuildContext context) => const ResultScreen(),
-  '/image': (BuildContext context) => TfliteModel(),
+  '/image': (BuildContext context) => TfliteModel(
+        labels: 'assets/labels.txt',
+        model: 'assets/model.tflite',
+      ),
 };

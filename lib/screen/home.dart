@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(245, 243, 193, 5),
       appBar: AppBar(
-        backgroundColor: Colors.green.shade900,
+        backgroundColor: Color.fromRGBO(27, 94, 32, 1),
       ),
       drawer: Drawer(
         backgroundColor: const Color.fromRGBO(245, 243, 193, 5),
