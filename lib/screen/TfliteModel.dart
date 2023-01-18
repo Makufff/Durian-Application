@@ -1,9 +1,12 @@
 import 'dart:io';
-
+import 'dart:ui' as ui;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
+import 'package:image/image.dart' as img;
+
+import 'dart:typed_data';
 
 class TfliteModel extends StatefulWidget {
   TfliteModel({Key? key, required String labels, required String model})
@@ -30,10 +33,10 @@ class _TfliteModelState extends State<TfliteModel> {
   ClassifyImage(File image) async {
     var output = await Tflite.runModelOnImage(
       path: image.path,
-      numResults: 2,
+      numResults: 5,
       threshold: 0.5,
-      imageMean: 127.5,
-      imageStd: 127.5,
+      imageMean: 175.5,
+      imageStd: 175.5,
     );
     setState(() {
       _output = output!;
@@ -53,6 +56,7 @@ class _TfliteModelState extends State<TfliteModel> {
     super.dispose();
   }
 
+  @override
   pickImage() async {
     var image = await picker.getImage(source: ImageSource.camera);
     if (image == null) return null;
@@ -60,6 +64,10 @@ class _TfliteModelState extends State<TfliteModel> {
     setState(() {
       _image = File(image.path);
     });
+
+    convertBGRtoRGB(_image);
+
+    resizeImage(_image);
 
     ClassifyImage(_image);
   }
@@ -71,6 +79,10 @@ class _TfliteModelState extends State<TfliteModel> {
     setState(() {
       _image = File(image.path);
     });
+
+    convertBGRtoRGB(_image);
+
+    resizeImage(_image);
 
     ClassifyImage(_image);
   }
@@ -167,4 +179,23 @@ class _TfliteModelState extends State<TfliteModel> {
           ),
         ));
   }
+
+  void convertBGRtoRGB(File image) async {
+    void convertBGRtoRGB(File image) async {
+      final codec = await ui.instantiateImageCodec(await image.readAsBytes());
+      final frame = await codec.getNextFrame();
+      final imageData =
+          await frame.image.toByteData(format: ui.ImageByteFormat.png);
+      if (imageData != null) {
+        final newImage =
+            await File(image.path).writeAsBytes(imageData.buffer.asUint8List());
+        setState(() {
+          _image = newImage;
+        });
+        ClassifyImage(_image);
+      }
+    }
+  }
+
+  void resizeImage(File image) async {}
 }

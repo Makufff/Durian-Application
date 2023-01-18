@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               title: const Text("ออกจากระบบ",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: Colors.white)),
             ),
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(10))),
                 child: const Text(
                   'เริ่มบินโดรน',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 15),
                 ),
                 onPressed: () {
                   aboutDialog().startDialog(context);
@@ -114,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(10))),
         child: Text(
           title,
-          style: TextStyle(fontSize: 20),
+          style: TextStyle(fontSize: 15),
         ),
         onPressed: () {
           Navigator.pushNamed(context, to_screen);
