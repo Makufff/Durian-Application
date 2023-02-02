@@ -149,8 +149,10 @@ class _ResultScreenState extends State<ResultScreen> {
                       //     child: ListView(
                       //   children: tilesList,
                       // )
+
                       child: Stack(children: [
                         countRow(),
+                        getData(),
                         Padding(
                           padding: const EdgeInsets.only(left: 20),
                           child: GridView.count(
@@ -169,24 +171,25 @@ class _ResultScreenState extends State<ResultScreen> {
       ),
     );
   }
-  // GridView getData() {
-  //   GridView data = GridView.count(
-  //     crossAxisCount: width,
-  //     children: [
-  //       for (var i = 1; i <= height; i++)
-  //         for (var j = 1; j <= width; j++)
-  //           Container(
-  //             width: 40,
-  //             height: 40,
-  //             decoration: BoxDecoration(
-  //               color: Colors.cyan[(j) * 100],
-  //               border: Border.all(color: Colors.black),
-  //             ),
-  //           ),
-  //     ],
-  //   );
-  //   return data;
-  // }
+
+  GridView getData() {
+    GridView data = GridView.count(
+      crossAxisCount: width,
+      children: [
+        for (var i = 1; i <= height; i++)
+          for (var j = 1; j <= width; j++)
+            Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: typeColor[Random().nextInt(3)],
+                border: Border.all(color: Colors.black),
+              ),
+            ),
+      ],
+    );
+    return data;
+  }
 
   Row info(Color color, String text) {
     return Row(

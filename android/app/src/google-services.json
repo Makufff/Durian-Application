@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "571969639553",
+    "firebase_url": "https://durian-44293-default-rtdb.firebaseio.com",
+    "project_id": "durian-44293",
+    "storage_bucket": "durian-44293.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571969639553:android:bd26a7d3eb53b21ba5a980",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571969639553-nptprn44b7fkvnhk395u4tdt84ojmmb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOLYru1huN3uq8Ie_CtPyiy-CyQK7zGuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571969639553-nptprn44b7fkvnhk395u4tdt84ojmmb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
