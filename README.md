@@ -54,7 +54,7 @@ Note: Additional setup instructions and details may be provided in the project's
 The Durian Application has received the following competitive project rewards:
 
 - Gold Medal Thailand NewGen Innovator Award 2023
-- Gold Medal Sillapa70
+- Gold Medal Sillapa70th
 - Final Round National Software Contest 24th
 
 These prestigious awards highlight the excellence and innovation demonstrated by the Durian Application in the field of leaf disease detection in durian trees.
