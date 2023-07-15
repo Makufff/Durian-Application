@@ -8,6 +8,7 @@ Durian Application is an application for detecting leaf diseases in durian trees
 - [Programming Language (Dart)](#programming-language-dart)
 - [How to Use](#how-to-use)
 - [How to Setup](#how-to-setup)
+- [Competitive Project Rewards](#competitive-project-rewards)
 
 ## Introduction
 
@@ -47,5 +48,15 @@ To set up the Durian Application, perform the following steps:
 6. Ensure that the required hardware components, such as a camera or drone, are properly connected and configured.
 
 Note: Additional setup instructions and details may be provided in the project's documentation.
+
+## Competitive Project Rewards
+
+The Durian Application has received the following competitive project rewards:
+
+- Gold Medal Thailand NewGen Innovator Award 2023
+- Gold Medal Sillapa70
+- Final Round National Software Contest 24th
+
+These prestigious awards highlight the excellence and innovation demonstrated by the Durian Application in the field of leaf disease detection in durian trees.
 
 That's it! You are now ready to use the Durian Application for detecting leaf diseases in durian trees and tracking the drone's operations.
