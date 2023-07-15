@@ -39,7 +39,7 @@ To use the Durian Application, follow these steps:
 
 To set up the Durian Application, perform the following steps:
 
-1. Clone the repository from [GitHub](https://github.com/your-repository-link).
+1. Clone the repository from [GitHub](https://github.com/Makufff/Durian-Application).
 2. Install the required dependencies and packages specified in the project's documentation.
 3. Configure the necessary API keys and settings, including the YOLOv8 object detection API and drone tracking API.
 4. Build the application using the provided build scripts or commands.
